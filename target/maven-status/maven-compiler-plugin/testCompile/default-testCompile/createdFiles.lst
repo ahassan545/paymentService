@@ -1,5 +1,0 @@
-com\payments\services\handlers\HttpRequestHandlerImpTests.class
-com\payments\models\PaymentTests.class
-com\payments\dataSource\store\PaymentStoreTests.class
-com\payments\dataSource\validators\PaymentValidatorTests.class
-com\payments\dataSource\validators\AccountValidatorTests.class

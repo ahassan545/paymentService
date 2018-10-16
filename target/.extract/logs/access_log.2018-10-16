@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [16/Oct/2018:05:02:46 +0100] POST /payments HTTP/1.1 200 21 http-bio-8080-exec-2 222
-0:0:0:0:0:0:0:1 - - [16/Oct/2018:05:03:13 +0100] GET /payments/ HTTP/1.1 200 223 http-bio-8080-exec-4 199
-0:0:0:0:0:0:0:1 - - [16/Oct/2018:05:03:13 +0100] GET /favicon.ico HTTP/1.1 404 973 http-bio-8080-exec-6 6

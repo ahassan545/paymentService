@@ -11,6 +11,7 @@ public class AccountValidator implements Validator<Account> {
     public Boolean isValid(Account account) {
         return account != null
                 && StringUtils.isNoneBlank(account.getName())
+                && account.getNumber() > 0
                 && account.getBalance() != null
                 && account.getBalance().compareTo(BigDecimal.ZERO) > 0
                 && StringUtils.isNoneBlank(account.getOwnerName())

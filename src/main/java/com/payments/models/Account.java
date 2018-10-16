@@ -4,19 +4,19 @@ import java.math.BigDecimal;
 
 public class Account {
 
-    private long id;
+    private long number;
     private String ownerName;
     private String name;
     private BigDecimal balance;
     private String sortCode;
 
 
-    public void setId(long id) {
-        this.id = id;
+    public void setNumber(long number) {
+        this.number = number;
     }
 
-    public long getId() {
-        return this.id;
+    public long getNumber() {
+        return this.number;
     }
 
     public void setOwnerName(String ownerName) {

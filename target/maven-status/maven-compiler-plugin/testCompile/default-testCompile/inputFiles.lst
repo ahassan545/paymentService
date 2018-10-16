@@ -1,5 +1,5 @@
-D:\proj\accountservice\src\test\java\com\payments\dataSource\validators\AccountValidatorTests.java
-D:\proj\accountservice\src\test\java\com\payments\dataSource\store\PaymentStoreTests.java
-D:\proj\accountservice\src\test\java\com\payments\dataSource\validators\PaymentValidatorTests.java
-D:\proj\accountservice\src\test\java\com\payments\services\handlers\HttpRequestHandlerImpTests.java
-D:\proj\accountservice\src\test\java\com\payments\models\PaymentTests.java
+D:\proj\paymentservice\paymentService\src\test\java\com\payments\dataSource\validators\AccountValidatorTests.java
+D:\proj\paymentservice\paymentService\src\test\java\com\payments\dataSource\validators\PaymentValidatorTests.java
+D:\proj\paymentservice\paymentService\src\test\java\com\payments\models\PaymentTests.java
+D:\proj\paymentservice\paymentService\src\test\java\com\payments\dataSource\store\PaymentStoreTests.java
+D:\proj\paymentservice\paymentService\src\test\java\com\payments\services\handlers\HttpRequestHandlerImpTests.java

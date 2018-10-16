@@ -20,7 +20,7 @@ public class AccountValidatorTests {
     public void setUp() throws IOException {
         fromAccount = new Account();
         fromAccount.setBalance(new BigDecimal(50));
-        fromAccount.setId(1);
+        fromAccount.setNumber(1);
         fromAccount.setName("fromAccount");
         fromAccount.setOwnerName("owner");
         fromAccount.setSortCode("sortcode");

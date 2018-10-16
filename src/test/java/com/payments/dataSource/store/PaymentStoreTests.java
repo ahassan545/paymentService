@@ -29,13 +29,13 @@ public class PaymentStoreTests {
         validator = Mockito.mock(Validator.class);
         Account fromAccount = new Account();
         fromAccount.setBalance(new BigDecimal(50));
-        fromAccount.setId(1);
+        fromAccount.setNumber(1);
         fromAccount.setName("fromAccount");
         fromAccount.setOwnerName("owner");
         fromAccount.setSortCode("sortcode");
         Account toAccount = new Account();
         fromAccount.setBalance(new BigDecimal(50));
-        fromAccount.setId(2);
+        fromAccount.setNumber(2);
         fromAccount.setName("toAccount");
         fromAccount.setOwnerName("owner");
         fromAccount.setSortCode("sortcode");

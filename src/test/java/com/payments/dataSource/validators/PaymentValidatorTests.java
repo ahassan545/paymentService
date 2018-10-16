@@ -25,16 +25,16 @@ public class PaymentValidatorTests {
         accountValidator = Mockito.mock(Validator.class);
         Account fromAccount = new Account();
         fromAccount.setBalance(new BigDecimal(50));
-        fromAccount.setId(1);
+        fromAccount.setNumber(1);
         fromAccount.setName("fromAccount");
         fromAccount.setOwnerName("owner");
         fromAccount.setSortCode("sortcode");
         Account toAccount = new Account();
-        fromAccount.setBalance(new BigDecimal(50));
-        fromAccount.setId(2);
-        fromAccount.setName("toAccount");
-        fromAccount.setOwnerName("owner");
-        fromAccount.setSortCode("sortcode");
+        toAccount.setBalance(new BigDecimal(50));
+        toAccount.setNumber(2);
+        toAccount.setName("toAccount");
+        toAccount.setOwnerName("owner");
+        toAccount.setSortCode("sortcode");
         payment = new Payment();
         payment.setAmount(new BigDecimal(12));
         ;
@@ -90,6 +90,19 @@ public class PaymentValidatorTests {
     @Test
     public void validator_invalid_account_returns_false() throws Exception {
         when(accountValidator.isValid(any(Account.class))).thenReturn(false);
+
+        Boolean result = validator.isValid(payment);
+
+        assertFalse(result);
+    }
+
+    @Test
+    public void validator_invalid_toAccount_returns_false() throws Exception {
+        Account toAccount = new Account();
+        toAccount.setBalance(new BigDecimal(5000));
+        toAccount.setName("toAccount");
+        toAccount.setOwnerName("Owner Name");
+        payment.setToAccount(new Account());
 
         Boolean result = validator.isValid(payment);
 
